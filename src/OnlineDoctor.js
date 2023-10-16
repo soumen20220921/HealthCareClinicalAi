@@ -4,39 +4,44 @@ import "./OnlineDoctor.css";
 // Not Completed
 const data = [
   {
-    name: "Dr. Minakshi, MBBS, MD",
-    department: "Medicine",
-    hospital: "Sat 4pm to 6pm",
+    name: "Dr. Minakshi Dhar, MBBS, MD",
+    department: "Specialization: General Medicine",
+    experience: "Experience: 15 years+",
+    hospital: "Avalability: S1: Sat 4.00 pm-4.30 pm, \n S2: 4.30 pm to 5.00 pm",
     img: "./images/Minakshi-Dhar.jpg",
     link: "https://forms.gle/uC6qnGcjyA5UjyT49"
   },
 
   {
-    name: "Dr Pankaj",
-    department: "Physiatrists",
-    hospital: "Sat 4pm to 6pm",
+    name: "Dr Pankaj Kumar, MBBS, MD",
+    department: "Specialization: Psychiatry",
+    experience: "Experience: 15 years+",
+    hospital: "Avalability: Sun 10 am to 11 am",
     img: "./images/Dr Pankaj.jpeg"
   },
 
   {
     name: "Dr Swarnim",
-    department: "Paediatric",
-    hospital: "Sat 4pm to 6pm",
+    department: "Specialization: Paediatric",
+    experience: "Experience: 5 years+",
+    hospital: "Avalability: Sat 6pm-7pm",
     img: "./images/Sawarnin.jpeg"
   }
 ]
 const data2 = [
   {
-    name: "Dr Mrinmoy",
-    department: "General",
-    hospital: "Sat 4pm to 6pm",
+    name: "Dr Mrinmoy, MBBS, MD",
+    department: "Specialization: General Medicine",
+    experience: "Experience: 3 years+",
+    hospital: "Avalability: Sat 4pm to 6pm",
     img: "./images/mrinmoy.jpeg"
   },
 
   {
-    name: "Dr Pandey",
-    department: "General",
-    hospital: "Sat 4pm to 6pm",
+    name: "Dr. Shobha Kant Pandey",
+    department: "Specialization: General Medicine",
+    experience: "Experience: 3 years+",
+    hospital: "Avalability: Sun 4pm to 6pm",
     img: "./images/DrPandey.jpg"
   },
 
@@ -58,6 +63,7 @@ const OnlineDoctor = () => {
             <div className='details'>
               <h1>{elm.name}</h1>
               <h4>{elm.department}</h4>
+              <h3>{elm.experience}</h3>
               <h3>{elm.hospital}</h3>
             </div>
             <div className='drbook'>
@@ -78,6 +84,7 @@ const OnlineDoctor = () => {
             <div className='details'>
               <h1>{elm.name}</h1>
               <h4>{elm.department}</h4>
+              <h3>{elm.experience}</h3>
               <h3>{elm.hospital}</h3>
             </div>
             <div className='drbook'>
