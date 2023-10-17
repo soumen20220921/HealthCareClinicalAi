@@ -18,7 +18,7 @@ header {
 }
 
 .Doctor {
-    height: 45rem;
+    height: 50rem;
     width: 40rem;
     background-color: white;
     position: relative;
@@ -50,7 +50,7 @@ header {
     height: 10rem;
     width: inherit;
     position: absolute;
-    bottom: 10rem;
+    bottom: 13rem;
     /* background-color: blue; */
     text-align: center;
 }

@@ -44,6 +44,14 @@ const data2 = [
     hospital: "Avalability: Sun 4pm to 6pm",
     img: "./images/DrPandey.jpg"
   },
+  {
+    name: "Dr. Diwakar SIngh, MBBS, MD",
+    department: "Specialization: General Medicine",
+    experience: "Experience: 3 years+",
+    hospital: "Avalability: Sun 4pm to 6pm",
+    img: "./images/Dr. Diwakar SIngh, MBBS, MD.jpeg"
+  },
+
 
 ]
 

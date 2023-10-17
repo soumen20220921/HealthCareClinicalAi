@@ -19,13 +19,24 @@ const data = [
     },
 
     {
-        name: "Mukul",
-        department: "",
+        name: "Mukul Kumar",
+        department: "Hackpthon and Product Building ",
         hospital: "Sat 4pm to 6pm",
-        img: "",
+        img: "./images/Mukul.jpeg",
         link: "https://forms.gle/sFUtMCziMQrXkuBBA"
 
-    }
+    },
+
+]
+const data1 = [
+    {
+        name: " Anisha Saha",
+        department: "Data Scientist, Mtech CMI, Data Science / Research  ",
+        hospital: "Sat 4pm to 6pm",
+        img: "./images/Anisha Saha.jpeg",
+        link: "https://forms.gle/sFUtMCziMQrXkuBBA"
+
+    },
 ]
 const data2 = [
 
@@ -35,6 +46,13 @@ const data2 = [
         department: "Medicine",
         hospital: "Sat 4pm to 6pm",
         img: "./images/Minakshi-Dhar.jpg",
+        link: "https://forms.gle/sFUtMCziMQrXkuBBA"
+    },
+    {
+        name: " Shivangi",
+        department: "Medicine",
+        hospital: "Sat 4pm to 6pm",
+        img: "",
         link: "https://forms.gle/sFUtMCziMQrXkuBBA"
     },
 
@@ -51,9 +69,9 @@ const data3 = [
     },
     {
         name: "Satyam Sahoo",
-        department: "",
+        department: " GDSC IIT Patna IOT Team Lead",
         hospital: "Sat 4pm to 6pm",
-        img: "",
+        img: "./images/satyam sahoo.jpeg",
         link: "https://forms.gle/sFUtMCziMQrXkuBBA"
     },
     {
@@ -64,6 +82,15 @@ const data3 = [
         link: "https://forms.gle/sFUtMCziMQrXkuBBA"
     },
 
+]
+const data4 = [
+    {
+        name: "Muhammed Sinan C K",
+        department: " SDE and clinical text processing",
+        hospital: "Sat 4pm to 6pm",
+        img: "./images/Muhammed Sinan C K.jpeg",
+        link: "https://forms.gle/sFUtMCziMQrXkuBBA"
+    },
 ]
 
 const mentorhip = () => {
@@ -88,6 +115,32 @@ const mentorhip = () => {
                             </Button>
                         </div>
                     </div>
+
+
+
+                )
+                )}
+            </div>
+            {/* 1.1 */}
+            <div className="body">
+                {data1.map((elm) => (
+
+                    <div className='Doctor'>
+                        <img src={elm.img} alt="" />
+                        <div className='details'>
+                            <h1>{elm.name}</h1>
+                            <h4>{elm.department}</h4>
+                            <h3>{elm.hospital}</h3>
+                        </div>
+                        <div className='drbook'>
+                            <Button className="btn hireme-btn">
+                                <a href={elm.link} target="blank">Book</a>
+                            </Button>
+                        </div>
+                    </div>
+                    // 
+
+
                 )
                 )}
             </div>
@@ -120,6 +173,26 @@ const mentorhip = () => {
             </header>
             <div className="body">
                 {data3.map((elm) => (
+
+                    <div className='Doctor'>
+                        <img src={elm.img} alt="" />
+                        <div className='details'>
+                            <h1>{elm.name}</h1>
+                            <h4>{elm.department}</h4>
+                            <h3>{elm.hospital}</h3>
+                        </div>
+                        <div className='drbook'>
+                            <Button className="btn hireme-btn">
+                                <a href={elm.link} target="blank">Book</a>
+                            </Button>
+                        </div>
+                    </div>
+                )
+                )}
+            </div>
+            {/* 3.1 */}
+            <div className="body">
+                {data4.map((elm) => (
 
                     <div className='Doctor'>
                         <img src={elm.img} alt="" />

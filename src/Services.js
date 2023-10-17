@@ -53,10 +53,10 @@ const Services = () => {
           <img src=".\images\clinik2.jpg" alt="" />
           <div className="button">
             <Button className="btn hireme-btn">
-              <NavLink to="/contact"> Explore </NavLink>
+              <NavLink to="/ClinicalTask"> Explore </NavLink>
             </Button>
             <Button className="btn hireme-btn">
-              <NavLink to="/contact"> REGISTER </NavLink>
+              <NavLink to="/ClinicalTask"> REGISTER </NavLink>
             </Button>
           </div>
         </div>
