@@ -12,6 +12,7 @@ import DataSet from "./DataSet";
 import OnlineDoctor from "./OnlineDoctor";
 import Mentorhip from './Mentorhip';
 import ClinicalTask from './ClinicalTask';
+import ClinicalDataset from './ClinicalDataset';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/onlinedoctor" element={<OnlineDoctor />} />
           <Route path="/Mentorhip" element={<Mentorhip />} />
           <Route path="/ClinicalTask" element={<ClinicalTask />} />
+          <Route path="/ClinicalDataset" element={<ClinicalDataset />} />
 
         </Routes>
         <Footer />

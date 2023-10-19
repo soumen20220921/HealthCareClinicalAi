@@ -1,55 +1,63 @@
-.outer{
+.outer {
   height: 55rem;
   width: 100%;
   background-color: lightblue;
   display: flex;
   justify-content: center;
-  gap: 15rem;
+  gap: 10rem;
 }
-.text{
+
+.text {
   height: 45rem;
-  width: 49rem;
+  width: 60rem;
   /* background-color: blueviolet; */
   justify-content: center;
   margin-top: 2.5rem;
 }
-.img{
+
+.img {
   height: 50rem;
   width: 60rem;
   /* background-color: blue; */
   justify-content: center;
   margin-top: 2.5rem;
 }
-.img2{
+
+.img2 {
   height: 450px;
   width: 100%;
   /* background-color: blue; */
   justify-content: center;
   margin-top: 2.5rem;
 }
-.heading{
+
+.heading {
   margin-top: 5rem;
   text-transform: uppercase;
-    font-size: 6.4rem;
-    /* background-color: brown; */
-    /* height: 200px;
+  font-size: 6.4rem;
+  /* background-color: brown; */
+  /* height: 200px;
     width: 100%; */
-    
-   
-    font-weight: bold
+
+
+  font-weight: bold
 }
+
 .hero-para {
   margin-top: 1.8rem;
-  margin-bottom: 3.4rem;
+  margin-bottom: 3.8rem;
   max-width: 60rem;
   opacity: .7;
   font-size: 1.65rem;
   line-height: 1.5;
   margin-top: 1rem;
-  font-weight:400;
+  font-weight: 400;
 }
-.btn{
-  text-decoration:none;
+
+
+
+.btn {
+  text-decoration: none;
   width: 200px;
   background-color: rgb(98 84 243);
   color: rgb(255, 255, 255);
@@ -62,7 +70,7 @@
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  border-radius:2rem;
+  border-radius: 2rem;
 
   &:hover,
   &:active {
@@ -71,15 +79,16 @@
     transform: scale(0.96);
   }
 
-  .a{
+  .a {
     text-decoration: none;
     color: rgb(255 255 255);
     font-size: 1.8rem;
-    
+
   }
 }
-@media(max-width: 1600px){
-  .outer{
+
+@media(max-width: 1600px) {
+  .outer {
     height: 500px;
     width: 100%;
     background-color: lightblue;
@@ -88,43 +97,20 @@
     gap: 13rem;
   }
 }
-@media(max-width: 1668px){
-  .outer{
+
+@media(max-width: 1668px) {
+  .outer {
     height: 55rem;
     width: 100%;
     background-color: lightblue;
     display: flex;
-    justify-content:center;
-    gap: 15rem;
-  }
-}
-@media(max-height: 786px){
-  .outer{
-    height: 50rem;
-    width: 100%;
-    background-color: lightblue;
-    display: flex;
     justify-content: center;
     gap: 15rem;
   }
-  .img{
-  height: 12rem;
-  width: 50rem;
-  /* background-color: blue; */
-  justify-content: center;
-  margin-top: 1.2rem;
-}
-.text{
-  height: 45rem;
-  width: 49rem;
-  /* background-color: blueviolet; */
-  justify-content: center;
-  margin-top: 1.2rem;
 }
 
-}
-@media(max-height: 800px){
-  .outer{
+@media(max-height: 786px) {
+  .outer {
     height: 50rem;
     width: 100%;
     background-color: lightblue;
@@ -132,22 +118,28 @@
     justify-content: center;
     gap: 15rem;
   }
-  .img{
-  height: 12rem;
-  width: 50rem;
-  /* background-color: blue; */
-  justify-content: center;
-  margin-top: 1.2rem;
+
+  .img {
+    height: 12rem;
+    width: 50rem;
+    /* background-color: blue; */
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+
+  .text {
+    height: 45rem;
+    width: 60rem;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+
 }
-.text{
-  height: 45rem;
-  width: 49rem;
-  /* background-color: blueviolet; */
-  justify-content: center;
-  margin-top: 1.2rem;
-}}
-@media(max-height: 900px){
-  .outer{
+
+@media(max-height: 800px) {
+  .outer {
     height: 50rem;
     width: 100%;
     background-color: lightblue;
@@ -155,18 +147,47 @@
     justify-content: center;
     gap: 15rem;
   }
-  .img{
-  height: 12rem;
-  width: 50rem;
-  /* background-color: blue; */
-  justify-content: center;
-  margin-top: 1.2rem;
+
+  .img {
+    height: 12rem;
+    width: 50rem;
+    /* background-color: blue; */
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+
+  .text {
+    height: 45rem;
+    width: 49rem;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
 }
-.text{
-  height: 45rem;
-  width: 49rem;
-  /* background-color: blueviolet; */
-  justify-content: center;
-  margin-top: 1.2rem;
-}
+
+@media(max-height: 900px) {
+  .outer {
+    height: 50rem;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+  }
+
+  .img {
+    height: 12rem;
+    width: 50rem;
+    /* background-color: blue; */
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+
+  .text {
+    height: 45rem;
+    width: 49rem;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
 }

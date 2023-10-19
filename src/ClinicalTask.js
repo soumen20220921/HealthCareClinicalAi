@@ -1,14 +1,13 @@
 import React from 'react'
-import "./DataSet.css"
+// import "./DataSet.css"
 import { useState } from 'react';
 // import Model from "./Model"
-
 import { Button } from "./styles/Button";
 
 const data =
     [
         {
-            img: "https://png.pngtree.com/png-vector/20230325/ourmid/pngtree-3-star-vector-clipart-png-image_6665412.png",
+            img: "./images/Medical entity recognition.jpg",
             Standard: " Medical entity recognition",
             catagory: "For the basics",
             price: "$15",
@@ -16,7 +15,7 @@ const data =
             link: "https://forms.gle/yKLF5w9B57CLbNks6"
         },
         {
-            img: "https://img.freepik.com/free-vector/gradient-5-star-logo-template_23-2150342391.jpg",
+            img: "./images/Medical Document Summarization.jpg",
             Standard: "Medical Document Summarization",
             catagory: "For the professional",
             price: "$50",
@@ -29,14 +28,14 @@ const data2 =
     [
 
         {
-            img: "https://seeklogo.com/images/1/4-star-logo-7EC0973792-seeklogo.com.png",
+            img: "./images/Medical Question Answering.png",
             Standard: "Medical Question Answering",
             catagory: "For the small team",
             price: "$30",
             about: "QueSemSpan MedQA is a large-scale semantic information annotated medical multi-span question answering corpus, which contains intent and "
         },
         {
-            img: "https://seeklogo.com/images/1/4-star-logo-7EC0973792-seeklogo.com.png",
+            img: "./images/on demand.png",
             Standard: "On Demand",
             catagory: "For the small team",
             price: "$30",
@@ -86,33 +85,36 @@ const ClinicalTask = () => {
             <div className='content'>
 
                 {data.map((eml) => (
-                    <div className="box no1">
-                        <div className="innerbox1">
-                            <img src={eml.img} alt="anc" />
-                        </div>
-                        <div className='innerbox2'>
-                            <h2>{eml.Standard}</h2>
-                            <h3>{eml.catagory}</h3>
-                            <h1>{eml.price}</h1>
-                            <h4> {eml.about}
-                                <button onClick={toggleModal} className="btn-modal">
-                                    more
-                                </button>
-                            </h4>
+                    <div className="pos">
+                        <div className="box no1">
+
+                            <div className='innerbox2'>
+                                <h2>{eml.Standard}</h2>
+                                <h3>{eml.catagory}</h3>
+
+                                <h4> {eml.about}
+                                    <button onClick={toggleModal} className="btn-modal">
+                                        more
+                                    </button>
+                                </h4>
 
 
-                        </div>
-                        <div className='innerbox3'>
-                            <Button className="btn hireme-btn">
-                                <a href={eml.link} target="blank">get access</a>
-                            </Button>
+                            </div>
+                            <div className="innerbox1">
+                                <img src={eml.img} alt="anc" />
+                            </div>
+                            <div className='innerbox3'>
+                                <Button className="btn hireme-btn">
+                                    <a href={eml.link} target="blank">get access</a>
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 ))}
 
 
                 {/* <div className="box no2"></div>
-          <div className="box no3"></div> */}
+            <div className="box no3"></div> */}
             </div>
 
 
@@ -139,13 +141,11 @@ const ClinicalTask = () => {
 
                 {data2.map((eml) => (
                     <div className="box no1">
-                        <div className="innerbox1">
-                            <img src={eml.img} alt="anc" />
-                        </div>
+
                         <div className='innerbox2'>
                             <h2>{eml.Standard}</h2>
                             <h3>{eml.catagory}</h3>
-                            <h1>{eml.price}</h1>
+                            {/* <h1>{eml.price}</h1> */}
                             <h4> {eml.about}
                                 <button onClick={toggleModal} className="btn-modal">
                                     more
@@ -153,6 +153,9 @@ const ClinicalTask = () => {
                             </h4>
 
 
+                        </div>
+                        <div className="innerbox1">
+                            <img src={eml.img} alt="anc" />
                         </div>
                         <div className='innerbox3'>
                             <Button className="btn hireme-btn">
@@ -164,7 +167,7 @@ const ClinicalTask = () => {
 
 
                 {/* <div className="box no2"></div>
-          <div className="box no3"></div> */}
+            <div className="box no3"></div> */}
             </div>
         </>
     )

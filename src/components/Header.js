@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <div className='main-header'>
       <NavLink to="/">
-        <img src=".\images\health-logo.png" alt="logo" className="logo" />
+        <img src=".\images\logo.png" alt="logo" className="logo" />
       </NavLink>
-      <Navbar/>
+      <Navbar />
     </div>
   )
 }

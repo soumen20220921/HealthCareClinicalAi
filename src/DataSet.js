@@ -9,18 +9,16 @@ import { Button } from "./styles/Button";
 const data =
   [
     {
-      img: "https://png.pngtree.com/png-vector/20230325/ourmid/pngtree-3-star-vector-clipart-png-image_6665412.png",
+      img: "./images/fig3.png",
       Standard: "PlanConSent",
       catagory: "For the basics",
-      price: "$15",
       about: "PlaCaConSet, a multi-modal, multi-turn plant care conversational dataset, which consists of around 1K conversations spanning over ",
       link: "https://forms.gle/yKLF5w9B57CLbNks6"
     },
     {
-      img: "https://img.freepik.com/free-vector/gradient-5-star-logo-template_23-2150342391.jpg",
+      img: "./images/ESimage6_1 (1).png",
       Standard: "ES-MDD",
       catagory: "For the professional",
-      price: "$50",
       about: "ES-MDD is an empathy and severity-aware multi-modal medical dialogue (ES-MMD) corpus in English, where each utterance is annotated with its"
     },
 
@@ -30,17 +28,15 @@ const data2 =
   [
 
     {
-      img: "https://seeklogo.com/images/1/4-star-logo-7EC0973792-seeklogo.com.png",
+      img: "./images/Med QA (2).png",
       Standard: "QueSemSpan",
       catagory: "For the small team",
-      price: "$30",
       about: "QueSemSpan MedQA is a large-scale semantic information annotated medical multi-span question answering corpus, which contains intent and "
     },
     {
-      img: "https://seeklogo.com/images/1/4-star-logo-7EC0973792-seeklogo.com.png",
+      img: "./images/RD-Dialogue.jpg",
       Standard: "RD-Dialogue",
       catagory: "For the small team",
-      price: "$30",
       about: "RD-Dialogue is a conversational corpus having conversations between patient and doctor. Each utterance is annotated with intent and       "
     },
   ]
@@ -83,26 +79,29 @@ function DataSet() {
       <div className='content'>
 
         {data.map((eml) => (
-          <div className="box no1">
-            <div className="innerbox1">
-              <img src={eml.img} alt="anc" />
-            </div>
-            <div className='innerbox2'>
-              <h2>{eml.Standard}</h2>
-              <h3>{eml.catagory}</h3>
-              <h1>{eml.price}</h1>
-              <h4> {eml.about}
-                <button onClick={toggleModal} className="btn-modal">
-                  more
-                </button>
-              </h4>
+          <div className="pos">
+            <div className="box no1">
+
+              <div className='innerbox2'>
+                <h2>{eml.Standard}</h2>
+                <h3>{eml.catagory}</h3>
+
+                <h4> {eml.about}
+                  <button onClick={toggleModal} className="btn-modal">
+                    more
+                  </button>
+                </h4>
 
 
-            </div>
-            <div className='innerbox3'>
-              <Button className="btn hireme-btn">
-                <a href={eml.link} target="blank">get access</a>
-              </Button>
+              </div>
+              <div className="innerbox1">
+                <img src={eml.img} alt="anc" />
+              </div>
+              <div className='innerbox3'>
+                <Button className="btn hireme-btn">
+                  <a href={eml.link} target="blank">get access</a>
+                </Button>
+              </div>
             </div>
           </div>
         ))}
@@ -136,9 +135,7 @@ function DataSet() {
 
         {data2.map((eml) => (
           <div className="box no1">
-            <div className="innerbox1">
-              <img src={eml.img} alt="anc" />
-            </div>
+
             <div className='innerbox2'>
               <h2>{eml.Standard}</h2>
               <h3>{eml.catagory}</h3>
@@ -150,6 +147,9 @@ function DataSet() {
               </h4>
 
 
+            </div>
+            <div className="innerbox1">
+              <img src={eml.img} alt="anc" />
             </div>
             <div className='innerbox3'>
               <Button className="btn hireme-btn">

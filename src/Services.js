@@ -19,12 +19,12 @@ const Services = () => {
               <NavLink to="/onlinedoctor"> DETAILS </NavLink>
             </Button>
             <Button className="btn hireme-btn">
-              <NavLink to="/OnlineDoctor"> Access </NavLink>
+              <a href="https://forms.gle/uC6qnGcjyA5UjyT49" target='blank'>Access</a>
             </Button>
           </div>
         </div>
         <div class="service-box">
-          <h2><b>Dataset</b></h2>
+          <h2><b>Clinical Dataset</b></h2>
           <img src=".\images\dataset.png" alt="" />
           <div className="button">
             <Button className="btn hireme-btn">
@@ -36,7 +36,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div class="service-box">
+        {/* <div class="service-box">
           <h2><b>Framework</b></h2>
           <img src="./images/framework.png" alt="" />
           <div className="button">
@@ -47,10 +47,10 @@ const Services = () => {
               <NavLink to="/contact"> Access </NavLink>
             </Button>
           </div>
-        </div>
+        </div> */}
         <div class="service-box">
-          <h2><b>Clinical Task</b></h2>
-          <img src=".\images\clinik2.jpg" alt="" />
+          <h2><b>Clinical<br /> Framework</b></h2>
+          <img className="Dr" src="./images/framework.png" alt="" />
           <div className="button">
             <Button className="btn hireme-btn">
               <NavLink to="/ClinicalTask"> Explore </NavLink>

@@ -1,67 +1,83 @@
 .content {
     height: 70rem;
     width: 100%;
-    background-color: rgb(164, 130, 88);
+    /* background-color: rgb(164, 130, 88); */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30rem;
+    margin-bottom: 5rem;
 
 }
 
 .no1 {
     height: 60rem;
-    width: 30rem;
+    width: 50rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5rem;
 
 
 }
 
+
+
 /* .no1{
     background-color: aqua;
 } */
-.no2 {
+/* .no2 {
     background-color: rgb(52, 84, 84);
 }
 
 .no3 {
     background-color: rgb(71, 44, 118);
-}
+} */
 
 .innerbox1 {
-    height: 15rem;
+    height: 30rem;
     width: inherit;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5rem;
 }
 
 .innerbox2 {
-    height: 35rem;
+    height: 20rem;
     width: inherit;
     background-color: white;
     text-align: center;
     padding: 1rem;
+    border-radius: 5rem;
 }
 
 .innerbox3 {
     height: 10rem;
     width: inherit;
     background-color: white;
+    border-radius: 5rem;
 
 }
 
 .innerbox1 img {
-    height: 13rem;
-    width: 13rem;
+    height: 28rem;
+    width: 50rem;
     border: 2px solid white;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* background-color: crimson; */
 }
 
 .innerbox2 h1 {
     font-size: 5rem;
     padding: 1rem;
+    border-radius: 5rem;
+
+}
+
+.innerbox2 h2 {
+
+    border-radius: 5rem;
 
 }
 
@@ -73,7 +89,7 @@
 .innerbox2 h4,
 .p {
     line-height: 2rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     font-size: 1.5rem;
     font-weight: 100;
     background-color: none;
