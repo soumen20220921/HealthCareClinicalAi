@@ -5,95 +5,25 @@ const AIAssistantSection = () => {
   return (
     <Wrapper>
       <Content>
-        <Header>
-          <HeaderQuestion>Can an AI Assistant Help Clinicians in Diagnosis?</HeaderQuestion>
-        </Header>
-        <SectionHeader>Unlocking Efficiency in Healthcare</SectionHeader>
+      
+        <SectionHeader>AI based Clinical Assistant</SectionHeader>
         <SectionDescription>
-          Our AI-powered healthcare assistant is revolutionizing the way
-          clinicians work. Here's how it can benefit you:
-        </SectionDescription>
-        <SubsectionHeader>1. Time Savings</SubsectionHeader>
-        <TimeSavingsDescription>
           Our AI assistant significantly reduces consultation time, allowing
           clinicians to see more patients in less time. This means shorter
           waiting times for patients and higher efficiency for clinicians.
-        </TimeSavingsDescription>
+        </SectionDescription>
+        
 
         <ImageContainer>
           {/* Increase the width and height of the first image */}
           <Image
-            src="./images/working.png"
-            alt="AI vs. Doctor"
-            width="800"
-            height="600"
+            src="./images/CAB.svg"
+            // alt="AI vs. Doctor"
+            width="1200"
+            height="1000"
           />
         </ImageContainer>
-        <SubsectionHeader>Time Savings for Different Patients</SubsectionHeader>
-        <TimeSavingsDescription>
-          Our AI assistant significantly reduces consultation time for various
-          patient types. See the chart below for details:
-        </TimeSavingsDescription>
-
-        <BarChartContainer>
-          {/* Insert your time savings chart image here */}
-          <BarChart
-            src="./images/chart.png"
-            alt="Time Savings Chart"
-          />
-        </BarChartContainer>
-        <SubsectionHeader>We have asked certain question to doctors having varying experiences</SubsectionHeader>
-        <TimeSavingsDescription>
-          Their experiences
-        </TimeSavingsDescription>
-
-        <BarChartContainer>
-          {/* Insert your time savings chart image here */}
-          <BarChart
-            src="./images/exp.png"
-            alt="Time Savings Chart"
-          />
-        </BarChartContainer>
-        <TimeSavingsDescription>
-          First question
-        </TimeSavingsDescription>
-
-        <BarChartContainer>
-          {/* Insert your time savings chart image here */}
-          <BarChart
-            src="./images/first-question.png"
-            alt="Time Savings Chart"
-          />
-        </BarChartContainer>
-
-        <TimeSavingsDescription>
-          Second question
-        </TimeSavingsDescription>
-
-        <BarChartContainer>
-          {/* Insert your time savings chart image here */}
-          <BarChart
-            src="./images/second-image.png"
-            alt="Time Savings Chart"
-          />
-        </BarChartContainer>
-
-        <TimeSavingsDescription>
-          Third question
-        </TimeSavingsDescription>
-
-        <BarChartContainer>
-          {/* Insert your time savings chart image here */}
-          <BarChart
-            src="./images/third-image.png"
-            alt="Time Savings Chart"
-          />
-        </BarChartContainer>
-
-        <SectionFooter>
-          Explore how our AI assistant can transform healthcare and improve
-          patient outcomes.
-        </SectionFooter>
+        
       </Content>
     </Wrapper>
   );

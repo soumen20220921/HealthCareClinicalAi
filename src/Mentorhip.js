@@ -5,7 +5,7 @@ const data = [
         name: "Abhisek Tiwari",
         department: "",
         hospital: "Sat 4pm to 6pm",
-        img: "./images/Abhisek Tiwari.jpeg",
+        img: "./images/Abhisek.jpg",
         link: "https://forms.gle/sFUtMCziMQrXkuBBA"
     },
 

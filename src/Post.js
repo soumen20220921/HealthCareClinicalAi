@@ -10,7 +10,7 @@ const Post = () => {
       <div className='post'>
         <div className='member'>
         <a href="https://abhisektiwari.github.io/" target="_blank" rel="noreferrer">
-        <img src=".\images\Abhisek Tiwari.jpeg" alt="" />
+        <img src=".\images\Abhisek.jpg" alt="" />
   
       </a>
           <div className='des'>
@@ -151,7 +151,7 @@ const Post = () => {
           </div>
         </div>
         <div className='member'>
-          <img src=".\images\Minakshi Dhar.jpeg" alt="" />
+          <img src=".\images\Minakshi-Dhar.jpg" alt="" />
           <div className='des'>
             <h3>
               Minakshi Dhar
@@ -433,10 +433,10 @@ const Post = () => {
       </div>
       <div className='post'>
         <div className='member'>
-          <img src=".\images\Minakshi Dhar.jpeg" alt="" />
+          <img src=".\images\Minakshi-Dhar.jpg" alt="" />
           <div className='des'>
             <h3>
-            Minakshi DharMinakshi Dhar
+            Minakshi Dhar
             </h3>
             <div className='social'>
               <div className="footer-social--icons">
