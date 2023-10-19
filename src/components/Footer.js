@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         {/* #rd child */}
         <div className="footer-sponsor">
-          <h3>Sponsored By</h3>
+          <h3>Supported By</h3>
           <div className='gap'>
             <div className="microsoft">
               <img src=".\images\Microsoft.jpeg" alt="" />

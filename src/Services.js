@@ -24,7 +24,7 @@ const Services = () => {
           </div>
         </div>
         <div class="service-box">
-          <h2><b>Clinical Dataset</b></h2>
+          <h2><b>Clinical Datasets</b></h2>
           <img src=".\images\dataset.png" alt="" />
           <div className="button">
             <Button className="btn hireme-btn">
@@ -49,7 +49,7 @@ const Services = () => {
           </div>
         </div> */}
         <div class="service-box">
-          <h2><b>Clinical<br /> Framework</b></h2>
+          <h2><b>Clinical<br /> Frameworks</b></h2>
           <img className="Dr" src="./images/framework.png" alt="" />
           <div className="button">
             <Button className="btn hireme-btn">
