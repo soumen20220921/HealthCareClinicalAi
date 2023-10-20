@@ -7,19 +7,15 @@ import { Button } from "./styles/Button";
 const data =
     [
         {
-            img: "./images/Medical entity recognition.jpg",
-            Standard: " Medical entity recognition",
-            catagory: "For the basics",
-            price: "$15",
-            about: "PlaCaConSet, a multi-modal, multi-turn plant care conversational dataset, which consists of around 1K conversations spanning over ",
+            img: "./images/MER.png",
+            Standard: " Medical Entity Recognition",
+            about: "Medical entity recognition (MEN), also known as clinical entity recognition or biomedical entity recognition, is a natural language processing (NLP) task that involves identifying and extracting specific medical or clinical entities from text, such as electronic health records, medical literature, clinical notes, or other healthcare-related documents.",
             link: "https://forms.gle/yKLF5w9B57CLbNks6"
         },
         {
-            img: "./images/Medical Document Summarization.jpg",
+            img: "./images/MDS.png",
             Standard: "Medical Document Summarization",
-            catagory: "For the professional",
-            price: "$50",
-            about: "ES-MDD is an empathy and severity-aware multi-modal medical dialogue (ES-MMD) corpus in English, where each utterance is annotated with its"
+            about: "We are excited to introduce our AI-driven Medical Document Summarization service, designed to swiftly and accurately condense extensive medical documents into clear and concise summaries. "
         },
 
     ]
@@ -28,17 +24,13 @@ const data2 =
     [
 
         {
-            img: "./images/Medical Question Answering.png",
+            img: "./images/Med QA (2).png",
             Standard: "Medical Question Answering",
-            catagory: "For the small team",
-            price: "$30",
             about: "QueSemSpan MedQA is a large-scale semantic information annotated medical multi-span question answering corpus, which contains intent and "
         },
         {
-            img: "./images/on demand.png",
+            img: "./images/OD.png",
             Standard: "On Demand",
-            catagory: "For the small team",
-            price: "$30",
             about: "RD-Dialogue is a conversational corpus having conversations between patient and doctor. Each utterance is annotated with intent and       "
         },
     ]
