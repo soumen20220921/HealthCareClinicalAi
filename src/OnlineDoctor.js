@@ -18,7 +18,8 @@ const data = [
     department: "Specialization: Psychiatry",
     experience: "Experience: 15 years+",
     hospital: "Avalability: Sun 10 am to 11 am",
-    img: "./images/Dr Pankaj.jpeg"
+    img: "./images/Dr Pankaj.jpeg",
+    link: "https://forms.gle/uC6qnGcjyA5UjyT49",
   },
 
   {
@@ -27,7 +28,8 @@ const data = [
     experience: "Experience: 5 years+",
     hospital: "Avalability: Sat 6pm-7pm",
     img: "./images/Sawarnin.jpeg",
-    id: "https://aiimspatna.edu.in/doctor/dr.swarnin11439@aiimspatna.org"
+    id: "https://aiimspatna.edu.in/doctor/dr.swarnin11439@aiimspatna.org",
+    link: "https://forms.gle/uC6qnGcjyA5UjyT49",
   }
 ]
 const data2 = [
@@ -36,7 +38,8 @@ const data2 = [
     department: "Specialization: General Medicine",
     experience: "Experience: 3 years+",
     hospital: "Avalability: Sat 4pm to 6pm",
-    img: "./images/mrinmoy.jpeg"
+    img: "./images/mrinmoy.jpeg",
+    link: "https://forms.gle/uC6qnGcjyA5UjyT49",
   },
 
   {
@@ -45,7 +48,8 @@ const data2 = [
     experience: "Experience: 3 years+",
     hospital: "Avalability: Sun 4pm to 6pm",
     img: "./images/DrPandey.jpg",
-    id: "https://sites.google.com/view/health-center-iit-patna/doctors#h.24n2z2koyslj"
+    id: "https://sites.google.com/view/health-center-iit-patna/doctors#h.24n2z2koyslj",
+    link: "https://forms.gle/uC6qnGcjyA5UjyT49",
   },
   {
     name: "Dr. Diwakar SIngh, MBBS, MD",
@@ -54,6 +58,7 @@ const data2 = [
     hospital: "Avalability: Sun 4pm to 6pm",
     img: "./images/Dr. Diwakar SIngh, MBBS, MD.jpeg",
     id: "https://www.medindia.net/patients/doctor_search/dr-diwakar-singh-indian-medicine-general-practitioner-family-physician-lakhisarai-bihar-81357-1.htm",
+    link: "https://forms.gle/uC6qnGcjyA5UjyT49",
   },
 
 
@@ -64,6 +69,7 @@ const data3 = [
     department: "Specialization:General Physician ,IGIMS, Patna",
     experience: "Experience: 3 years+",
     hospital: "Avalability: Sat 4pm to 6pm",
+    link: "https://forms.gle/uC6qnGcjyA5UjyT49",
     // img: "./images/mrinmoy.jpeg"
   },
 
@@ -126,7 +132,7 @@ const OnlineDoctor = () => {
         {data3.map((elm) => (
 
           <div className='Doctor'>
-            <img src={elm.img} alt="" />
+            <a href={elm.id} target="_blank" rel="noopener noreferrer"><img src={elm.img} alt="" /></a>
             <div className='details'>
               <h1>{elm.name}</h1>
               <h4>{elm.department}</h4>
