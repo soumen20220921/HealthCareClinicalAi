@@ -1,21 +1,14 @@
-import './App.css';
 import Home from './Home';
 import Header from "./components/Header";
 import Footer from './components/Footer'
-import Wtwy from "./Wtwy"
-import HeAssistant from "./HeAssistant"
 import Services from "./Services"
-import News from "./News"
-import Post from "./Post";
-import Getstarted from "./getStarted";
-import DataSet from "./DataSet";
-import OnlineDoctor from "./OnlineDoctor";
-import Mentorhip from './Mentorhip';
-import ClinicalTask from './ClinicalTask';
-import ClinicalDataset from './ClinicalDataset';
-
+import Vision from './Vision';
+import OnlineDr from './OnlineDr';
+import Dataset from './Dataset';
+import Framework from './Framework';
+import Mentorship from './Mentorship';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import SwaasthyaSathi from './SwaasthyaSathi';
 
 function App() {
   return (
@@ -25,18 +18,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/wtwy" element={<Wtwy />} />
-          <Route path="/heassistant" element={<HeAssistant />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/post" element={<Post />} />
-          <Route path="/getstarted" element={<Getstarted />} />
-          <Route path="/dataset" element={<DataSet />} />
-          <Route path="/onlinedoctor" element={<OnlineDoctor />} />
-          <Route path="/Mentorhip" element={<Mentorhip />} />
-          <Route path="/ClinicalTask" element={<ClinicalTask />} />
-          <Route path="/ClinicalDataset" element={<ClinicalDataset />} />
-
+          <Route path="/vision" element={<Vision />} />
+          <Route path="/SwaasthyaSathi" element={<SwaasthyaSathi />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/onlinedr" element={<OnlineDr />} />
+          <Route path="/dataset" element={<Dataset />} />
+          <Route path="/framework" element={<Framework />} />
+          <Route path="/mentorship" element={<Mentorship />} />
         </Routes>
         <Footer />
       </BrowserRouter>

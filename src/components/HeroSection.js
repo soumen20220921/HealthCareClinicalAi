@@ -1,30 +1,28 @@
-import React from 'react';
+import React from 'react'
+import styles from "./Herosection.module.css";
+import { NavLink } from 'react-router-dom';
+const Herosection = () => {
+    return (
+        <div>
+            <main>
+                <div className={`${styles.box1} ${styles.box}`}>
+                    <div ><h1 className={styles.cname}>CLINICAL <span>AI</span> <br /> ASSISTANCE</h1></div>
+                    <div className={styles.cdes}>In the past five years, dozens of surveys and reports indicate an unbalanced doctor-to-population ratio. With the motivation of assisting doctors, we built an autonomous junior healthcare assistant to help doctors in symptom investigation and diagnosis. The assistant serves as the initial point of contact for patients, essentially functioning as a healthcare receptionist. It conducts an initial assessment and compiles a concise report for the physician.</div>
+                    <NavLink
+                        className="navbar-link"
 
-import { NavLink } from "react-router-dom";
+                        to="/services">
+                        <button className={styles.btn} >MORE</button>
+                    </NavLink>
 
-import "./HeroSection.css"
+                </div>
+                <div className={`${styles.box2} ${styles.box}`}>
+                    <img src=".\img\hero2-removebg-preview.png" alt="img" />
+                </div>
 
-const HeroSection = () => {
-  return (
-    <>
-      <div className='outer'>
-        <div className='text'>
-
-          <p className='heading' style={{ color: 'black' }}>CLINICAL<span style={{ color: "#EE7F1A" }}> AI</span>  ASSISTANCE</p>
-          <p className="hero-para" style={{ color: 'black' }}>
-            In the past five years, dozens of surveys and reports indicate an unbalanced doctor-to-population ratio. With the motivation of assisting doctors, we built an autonomous junior healthcare assistant to help doctors in symptom investigation and diagnosis. The assistant serves as the initial point of contact for patients, essentially functioning as a healthcare receptionist. It conducts an initial assessment and compiles a concise report for the physician.
-          </p>
-
-          <button className='btn'>
-            <NavLink to="/services" className="a">More</NavLink>
-          </button>
+            </main>
         </div>
-        <div className='img'>
-          <img className='img2' src=".\images\hero2-removebg-preview.png" alt="" />
-        </div>
-      </div>
-    </>
-  )
+    )
 }
 
-export default HeroSection
+export default Herosection

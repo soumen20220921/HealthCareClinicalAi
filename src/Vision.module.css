@@ -1,0 +1,93 @@
+.outervs {
+    height: fit-content;
+    width: 100%;
+    background-color: lightblue;
+    padding-top: 5vw;
+}
+
+.vsimg {
+    height: 30vw;
+    width: 40vw;
+    min-height: 280px;
+    min-width: 300px;
+    /* background-color: rgb(13, 98, 173); */
+    margin: auto;
+
+}
+
+.content {
+    height: fit-content;
+    width: 60vw;
+    margin: auto;
+    /* background-color: aquamarine; */
+}
+
+.q {
+    font-size: 1.6vw;
+    padding: 1vw;
+    border-radius: 20px;
+    background-color: rgb(124, 185, 238);
+    margin: 20px 0;
+}
+
+.ans {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.space {
+    height: 5vw;
+}
+
+@media (max-width:1026px) {
+
+
+
+
+    .q {
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgb(124, 185, 238);
+        margin-bottom: 10px;
+    }
+
+    .ans {
+        padding: 15px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        background-color: aliceblue;
+    }
+}
+
+@media (max-width:600px) {
+    .vsimg {
+        height: 280px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .content {
+        height: fit-content;
+        width: 330px;
+        margin: auto;
+        /* background-color: aquamarine; */
+        padding: 20px 0;
+    }
+
+    .q {
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgb(124, 185, 238);
+        margin-bottom: 10px;
+    }
+
+    .ans {
+        padding: 15px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        background-color: aliceblue;
+    }
+}
