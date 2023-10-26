@@ -1,170 +1,56 @@
+import React from 'react'
+import styles from "./Dataset.module.css"
 
-import "./DataSet.css"
-import { useState } from 'react';
-// import Model from "./Model"
-
-import { Button } from "./styles/Button";
-// import { NavLink } from "react-router-dom";
-
-const data =
-  [
+const data = [
     {
-      img: "./images/fig3.png",
-      Standard: "PlanConSent",
-      catagory: "For the basics",
-      about: "PlaCaConSet, a multi-modal, multi-turn plant care conversational dataset, which consists of around 1K conversations spanning over ",
-      link: "https://forms.gle/yKLF5w9B57CLbNks6"
+        name: "PlanConSent",
+        des: "PlaCaConSet, a multi-modal, multi-turn plant care conversational dataset, which consists of around 1K conversations spanning over",
+        img: "./img/fig3.png",
+        link: ""
     },
     {
-      img: "./images/ESimage6_1 (1).png",
-      Standard: "ES-MDD",
-      catagory: "For the professional",
-      about: "ES-MDD is an empathy and severity-aware multi-modal medical dialogue (ES-MMD) corpus in English, where each utterance is annotated with its"
-    },
-
-  ]
-
-const data2 =
-  [
-
-    {
-      img: "./images/Med QA (2).png",
-      Standard: "QueSemSpan",
-      catagory: "For the small team",
-      about: "QueSemSpan MedQA is a large-scale semantic information annotated medical multi-span question answering corpus, which contains intent and "
+        name: "ES-MDD",
+        des: "ES-MDD is an empathy and severity-aware multi-modal medical dialogue (ES-MMD) corpus in English, where each utterance is annotated with its",
+        img: "./img/ESimage6_1 (1).png",
+        link: ""
     },
     {
-      img: "./images/RD-Dialogue.jpg",
-      Standard: "RD-Dialogue",
-      catagory: "For the small team",
-      about: "RD-Dialogue is a conversational corpus having conversations between patient and doctor. Each utterance is annotated with intent and       "
+        name: "QueSemSpan",
+        des: "QueSemSpan MedQA is a large-scale semantic information annotated medical multi-span question answering corpus, which contains intent and",
+        img: "./img/Med QA (2).png",
+        link: ""
     },
-  ]
+    {
+        name: "RD-Dialogue",
+        des: "RD-Dialogue is a conversational corpus having conversations between patient and doctor. Each utterance is annotated with intent and",
+        img: "./img/RD-Dialogue.jpg",
+        link: ""
+    },
+]
 
-function DataSet() {
-
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if (modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
-
-
-
-  return (
-    <>
-      <div className="pop-up">
-        {modal && (
-          <div className="modal">
-            <div onClick={toggleModal} className="overlay"></div>
-            <div className="modal-content">
-              <h2>Hello Modal</h2>
-              <div className="p">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dolore corporis similique autem voluptatem facilis ullam eligendi dignissimos saepe quis facere ratione aliquam delectus, esse aspernatur neque architecto officia earum.
-              </div>
-              <button className="close-modal" onClick={toggleModal}>
-                X
-              </button>
+const Dataset = () => {
+    return (
+        <>
+            <div className={styles.Drheader}>
+                <h1>Clinical Framework</h1>
             </div>
-          </div>
-        )}
-      </div>
+            <div className={styles.dsouter}>
+                {data.map((elm) => (
 
-      <div className='content'>
+                    <div className={styles.dsbox}>
+                        <h1 className={styles.dsname} >{elm.name}</h1>
+                        <p className={styles.dsdes}>{elm.des}<button className={styles.btn1}>more</button></p>
+                        <img className={styles.img} src={elm.img} alt="" />
 
-        {data.map((eml) => (
-          <div className="pos">
-            <div className="box no1">
+                        <a href={elm.link} target='blank'> <button className={styles.btndiv} >GET ACCESS</button></a>
 
-              <div className='innerbox2'>
-                <h2>{eml.Standard}</h2>
-                <h3>{eml.catagory}</h3>
+                    </div>
 
-                <h4> {eml.about}
-                  <button onClick={toggleModal} className="btn-modal">
-                    more
-                  </button>
-                </h4>
-
-
-              </div>
-              <div className="innerbox1">
-                <img src={eml.img} alt="anc" />
-              </div>
-              <div className='innerbox3'>
-                <Button className="btn hireme-btn">
-                  <a href={eml.link} target="blank">get access</a>
-                </Button>
-              </div>
+                )
+                )}
             </div>
-          </div>
-        ))}
-
-
-        {/* <div className="box no2"></div>
-            <div className="box no3"></div> */}
-      </div>
-
-
-
-      {/* elm2 started */}
-      <div className="pop-up">
-        {modal && (
-          <div className="modal">
-            <div onClick={toggleModal} className="overlay"></div>
-            <div className="modal-content">
-              <h2>Hello Modal</h2>
-              <div className="p">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dolore corporis similique autem voluptatem facilis ullam eligendi dignissimos saepe quis facere ratione aliquam delectus, esse aspernatur neque architecto officia earum.
-              </div>
-              <button className="close-modal" onClick={toggleModal}>
-                X
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
-
-      <div className='content'>
-
-        {data2.map((eml) => (
-          <div className="box no1">
-
-            <div className='innerbox2'>
-              <h2>{eml.Standard}</h2>
-              <h3>{eml.catagory}</h3>
-              <h1>{eml.price}</h1>
-              <h4> {eml.about}
-                <button onClick={toggleModal} className="btn-modal">
-                  more
-                </button>
-              </h4>
-
-
-            </div>
-            <div className="innerbox1">
-              <img src={eml.img} alt="anc" />
-            </div>
-            <div className='innerbox3'>
-              <Button className="btn hireme-btn">
-                <a href={eml.link} target="blank">get access</a>
-              </Button>
-            </div>
-          </div>
-        ))}
-
-
-        {/* <div className="box no2"></div>
-            <div className="box no3"></div> */}
-      </div>
-    </>
-  )
+        </>
+    )
 }
 
-export default DataSet
+export default Dataset
